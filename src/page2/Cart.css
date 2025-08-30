@@ -1,10 +1,10 @@
 .cart{
     width: 75%;
-    margin-left: 200px;
-    aspect-ratio: 16 / 8; 
+    width: 1400px;
+    margin: 0 auto;
     border-right: 1px solid #7E7E7E;
     border-left: 1px solid #7E7E7E;
-    height: 200vh;
+    height: 100vh;
     position: relative;
 }
 .cartcontainer{
