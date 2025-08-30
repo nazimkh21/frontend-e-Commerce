@@ -1,5 +1,5 @@
 .cart{
-    width: 75%;
+    min-width: 75%;
     width: 1400px;
     margin: 0 auto;
     border-right: 1px solid #7E7E7E;
