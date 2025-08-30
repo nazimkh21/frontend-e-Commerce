@@ -1,0 +1,73 @@
+.usercontainer {
+  position: absolute;
+  top: 68px; /* adjust depending on navbar */
+  right: 20px;
+  width: 220px;
+  height: 380px;
+  background: #aab3bb;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  padding: 16px;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+  border: 1px solid black;
+}
+
+.usernames h3 {
+  position: absolute;
+  top: 180px;
+  left: 65px;
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 4px;
+}
+
+.usernames p {
+  font-size: 1.1rem;
+  
+}
+
+.logoutbtn {
+  margin-top: 12px;
+  background: #d62828;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  /* transition: background 0.2s; */
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  position: absolute;
+  top: 280px;
+  right: 30px;
+}
+
+.logoutbtn:hover {
+  background: #b71c1c;
+}
+
+.circle1{
+border: 1px solid black;
+width: 85px;
+height: 85px;
+border-radius: 9999px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.5rem;
+font-weight: 580;
+position: absolute;
+left: 70px;
+top: 60px;
+
+
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

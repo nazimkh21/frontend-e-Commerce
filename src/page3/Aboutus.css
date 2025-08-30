@@ -1,0 +1,88 @@
+.page3{
+   position: relative;
+    width: 75%;
+    width: 1400px;
+    margin: 0 auto;
+    height:2540px ;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.aboutus img{
+    position: absolute;
+    width: 1285px;
+    height: 468px;
+    opacity: 1;
+    top: 131px;
+    left: 76px;
+
+}
+.aboutus p{
+    position: absolute;
+    width: 282px;
+    height: 82px;
+    opacity: 1;
+    top: 307px;
+    left: 579px;
+    font-family: Product Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 68px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+.sectionn5{
+    position: absolute;
+    top: 700px;
+    border: none;
+    width: 100%;
+}
+#pic9{
+    position: absolute;
+    width: 1285px;
+    height: 468px;
+    opacity: 1;
+    top: 890px;
+    left: 76px;
+
+}
+#t{
+    width: 185px;
+    height: 36px;
+    opacity: 1;
+    position: absolute;
+    top: 1466px;
+    left: 60px;
+    font-family: Product Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  
+}
+.sorting{
+    position: absolute;
+    top: 1600px;
+    display: flex;
+    gap: 70px;
+    left: 35px;
+    
+}
+#images{
+    width: 402px;
+    height: 364px;
+  
+}
+
+#date{
+    margin-right: 35px;
+    color: #9E9E9E;
+    font-size: 25px;
+
+}
+.sectionn6{
+    position: absolute;
+    top: 2150px;
+    width: 100%;
+}

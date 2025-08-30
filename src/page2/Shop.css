@@ -1,0 +1,29 @@
+.page2-container{
+    position: relative;
+    height: 1885px;
+    min-width: 75%;
+    width: 1400px;
+    margin: 0 auto;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+   
+}
+
+
+.categorysidebar{
+    position: absolute;
+    width: 280px;
+    height: 500px;
+    right: 20px;
+    top: 100px;
+   
+}
+.product-view{
+    position: absolute;
+    top: 200px;
+}
+.section6{
+    position: absolute;
+    top:1500px;
+    width: 100% ;
+}
