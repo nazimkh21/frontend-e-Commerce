@@ -4,7 +4,7 @@
     margin: 0 auto;
     border-right: 1px solid #7E7E7E;
     border-left: 1px solid #7E7E7E;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 .cartcontainer{
