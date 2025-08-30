@@ -1,7 +1,7 @@
 import { Search, ShoppingBag, Menu } from 'lucide-react'
 import './Barsection.css'
 import { useNavigate } from 'react-router-dom'
-import Userinfo from './userinfo'
+import Userinfo from './Userinfo.jsx'
 import { useState } from 'react'
 
 export default function Barsection(){
