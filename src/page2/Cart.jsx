@@ -34,7 +34,7 @@ export default function Cart(){
     const updateCart = async (updatedItems) => {
         try {
             await axios.put(
-                "http://localhost:5500/itemcart",
+                "https://backend-e-commerce-da58.onrender.com/itemcart",
                 { itemsselected: updatedItems },
                 {
                     headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
@@ -77,7 +77,7 @@ export default function Cart(){
 
    const  deleteItem= async (product)=>{
      try {
-       await axios.delete("http://localhost:5500/itemcart",{
+       await axios.delete("https://backend-e-commerce-da58.onrender.com/itemcart",{
         data:{itemid: product.id},
           
              headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }

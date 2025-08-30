@@ -31,7 +31,7 @@ let currentProducts = products.slice(startindex,itemperpage+startindex)
     };
 
     const response = await axios.post(
-      "http://localhost:5500/itemcart",
+      "https://backend-e-commerce-da58.onrender.com/itemcart",
       data,
       {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }

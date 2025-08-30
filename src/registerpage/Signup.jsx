@@ -42,7 +42,7 @@ export default function Signup({input,setInput,prob,setProb}){
       userpassword: input.Password,
       username: input.Username
                 }
-    const response  = await  axios.post("http://localhost:5500/register",data)
+    const response  = await  axios.post("https://backend-e-commerce-da58.onrender.com/register",data)
         if (response.status === 200) {
         // Registration does not return a token, so skip localStorage
         console.log("User registered:", response.data)
