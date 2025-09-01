@@ -43,8 +43,11 @@ export default function Register({input,setInput,prob,setProb}){
         
           
         } catch (error) {
-          console.error("Error during registration:", error);
-          setProb("Registration failed, try again");
+          if (error.response && error.response.data) {
+            setProb(error.response.data.message || error.response.data.error || "Registration failed, try again");
+          } else {
+            setProb("Registration failed, try again");
+          }
         }
     
              
