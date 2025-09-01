@@ -8,7 +8,7 @@ import ScrollToTop from "./ScrollToTop";
 import Register from "./registerpage/Register"
 import Signup from "./registerpage/Signup"
 import Cart from "./page2/Cart"
-
+import GoogleRedirect from './registerpage/GoogleRedirect';
 
 function App() {
    
@@ -38,7 +38,7 @@ function App() {
         <Route path='/register' element={<Register input={input} setInput={setInput} prob={prob} setProb={setProb}/>}/>
         <Route path='/Signup' element={<Signup input={input} setInput={setInput} prob={prob} setProb={setProb}/>}/>
         <Route path='/Cart' element={<Cart/>}/>
-        
+        <Route path="/auth/success" element={<GoogleRedirect />} />
         
      </Routes>
    </Router>

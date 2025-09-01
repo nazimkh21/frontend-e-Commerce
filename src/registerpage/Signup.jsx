@@ -1,8 +1,9 @@
 import "./Register.css"
-
+import "./Signup.css"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
+import google from "../assets/search.jpg"
 export default function Signup({input,setInput,prob,setProb}){
 
 
@@ -50,8 +51,11 @@ export default function Signup({input,setInput,prob,setProb}){
       }
       
     } catch (error) {
-      console.error("Error during registration:", error);
+      if (error.response && error.response.data) {
+      setProb(error.response.data.message || error.response.data.error || "Registration failed, try again");
+    } else {
       setProb("Registration failed, try again");
+    }
     }
 
         
@@ -65,15 +69,12 @@ export default function Signup({input,setInput,prob,setProb}){
     }
 
    
-
-   
-   
     return(
         <div className="regitser-container">
           <div className="wrapper">
             <div className="form-wrapper sign-in">
                 <form onSubmit={(event)=> handlesubmit(event)} action="">
-                    <h2>Sign In</h2>
+                    <h2 id="sign-tittle">Sign In</h2>
                     <div className="input-group">
                         <input
                          type="text"
@@ -113,7 +114,7 @@ export default function Signup({input,setInput,prob,setProb}){
                     <div className="remember">
                         <label htmlFor=""> <input type="checkbox" /> Remember me</label>
                     </div>
-                    <button type="submit"> Sign in</button>
+                    <button className="signin" type="submit"> Sign in</button>
                     <div className="signUp-link">
                         <p>have an account? 
                         <span onClick={()=>leavepage("/register")} className="singUpBtn-link">
@@ -121,6 +122,21 @@ export default function Signup({input,setInput,prob,setProb}){
                         </span>
                         </p>
                     </div> 
+                  
+                      <button
+                      type="button"
+                      id="googlelogin"
+                      onClick={()=>{
+                        window.location.href= "https://backend-e-commerce-da58.onrender.com/auth/google"
+                      }}
+                      >
+                      continue with google
+                       <img src={google} alt="" />
+                   
+                        
+                         
+                      </button>
+                  
 
                 </form>
             </div>

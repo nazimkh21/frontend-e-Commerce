@@ -79,7 +79,7 @@ export default function Register({input,setInput,prob,setProb}){
           <div className="wrapper">
             <div className="form-wrapper sign-in">
                 <form  onSubmit={(event)=> handlesubmit(event)} action="">
-                    <h2>Sign In</h2>
+                    <h2 id="s-tittle" >Sign In</h2>
                     <div className="input-group">
                         <input
                          type="email"
@@ -111,7 +111,7 @@ export default function Register({input,setInput,prob,setProb}){
                         <label htmlFor=""> <input type="checkbox" /> Remember me</label>
                     </div>
 
-                    <button type="submit"> Sign in</button>
+                    <button className="signin"  type="submit"> Sign in</button>
                     <div className="signUp-link">
                         <p>Dont have an account? 
                         <span onClick={()=>leavepage("/Signup")} className="singUpBtn-link">
